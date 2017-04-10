@@ -48,7 +48,7 @@ li a{
 	text-decoration: none;
 }
 .content{
-	width: 50%;
+	width: 650px ;
 	float: left;
 	background: lightgray;
 	margin-right: 2%;
@@ -58,13 +58,16 @@ li a{
 }
 .content h1{
 	font-size: 38px;
+	padding: 20px 0;
 }
 .content p{
 	font-size: 20px;
+	padding: 10px 0;
 }
 .content a{
 	color: black;
 	text-decoration: none;
+	font-size: 30px;
 }
 .footer{
 	clear: both;
@@ -78,8 +81,7 @@ hr{
 
 .contact{
 	text-align: center;
-	width: 25%;
-	float: right;
+	width: 270px;
 	background: lightgray;
 	padding-bottom: 20px;
 	float: left;
@@ -105,17 +107,21 @@ hr{
 }
 #img-me{
 	float: left;
-	margin-right: 10px;
-	height: 150px;
+	margin-right: 17px;
+	height: 163px;
 	margin-top: 10px;
+	border-radius: 5%;
+	box-shadow: 10px 10px 5px #888888;
 }
 .contact hr{
 	width: 80%;
 	margin:auto;
 	margin-bottom: 10px;
+
 }
 .contact h2{
 	    font-size: 24px;
+	    padding: 15px 0;
 }
 input{
 	    background: #eaeaea;
@@ -139,14 +145,22 @@ input{
 .row{
 	clear: both;
 }
-.thumbnail{}
-.thumbnail img{
-/* 	height: 240px;
- */}
+
 .thumbnail h2{
 	position: relative;
     bottom: 100px;
     background: #babac0;
     text-align: center;
     padding: 4% 0;
+}
+
+#sto{
+	border-radius: 7%;
+}
+a:hover {
+	text-decoration: underline;
+}
+.thumbnail h2:hover {
+	box-shadow: 5px 5px 5px #888888;
+	margin-left: 5px;
 }
