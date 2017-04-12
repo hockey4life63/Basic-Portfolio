@@ -73,6 +73,10 @@ li a{
 	clear: both;
 }
 
+.footer p{
+	padding: 20px 0;
+}
+
 hr{
 	width: 100%;
 	margin: auto;
@@ -85,6 +89,7 @@ hr{
 	background: lightgray;
 	padding-bottom: 20px;
 	float: left;
+	margin-left: 5%;
 }
 .contact img{
 	width: 75px;
