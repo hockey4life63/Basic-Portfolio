@@ -7,7 +7,7 @@ html, body{
 	background-repeat: repeat;
 }
 .container{
-	width: 90%;
+	width: 960px;
 	margin: auto;
 }
 .nav{
@@ -67,22 +67,24 @@ li a{
 	float: left;
 	background: lightgray;
 	margin-right: 2%;
-	padding: 0 3% 2% 3%;
+	padding-bottom: 20px;
 	margin-bottom: 100px;
 
 }
 .content h1{
 	font-size: 38px;
-	padding: 20px 0;
+	margin: 20px 20px;
+	font-family: 'VT323', monospace;
+
 }
 .content p{
 	font-size: 20px;
-	padding: 10px 0;
+	padding: 10px 20px;
 }
 .content a{
 	color: black;
 	text-decoration: none;
-	font-size: 30px;
+	font-size: 26px;
 }
 .footer{
 	clear: both;
@@ -104,7 +106,7 @@ hr{
 	background: lightgray;
 	padding-bottom: 20px;
 	float: left;
-	margin-left: 5%;
+	/*margin-left: 5%;*/
 }
 .contact img{
 	width: 75px;
@@ -132,6 +134,7 @@ hr{
 	margin-top: 10px;
 	border-radius: 5%;
 	box-shadow: 10px 10px 5px #888888;
+	margin-left: 20px;
 }
 .contact hr{
 	width: 80%;
@@ -152,11 +155,16 @@ input{
 	width: 100%;
 	height: 300px;
 	background: #eaeaea;
+	resize: none;
 }
 #submit{
 	width: 150px;
 	background: #babac0;
     border: 0;
+}
+form{
+	width: 90%;
+	margin: 0 auto;
 }
 .thumbnail-1{
 	float: left;
@@ -167,10 +175,14 @@ input{
 .row{
 	clear: both;
 }
-
+.thumbnail{
+	width: 250px;
+	margin: 0 20px;
+}
 .thumbnail h2{
+	font-size: 12px;
 	position: relative;
-    top: 200px;
+    top: 160px;
     background: #babac0;
     text-align: center;
     padding: 4% 0;
@@ -178,6 +190,8 @@ input{
 }
 .thumbnail img{
 	transition-duration: 1s;
+	width: 250px;
+
 }
 #sto{
 	border-radius: 7%;
@@ -192,15 +206,40 @@ a:hover {
 }
 .thumbnail-1 h2:hover{
 	margin-left: -5px;
+	margin-right: 5px;
 
 }
 
 .thumbnail-2 h2:hover +img{
 	box-shadow: 5px 5px 5px #888888;
-	margin-right: 5px;
+	margin-left: -5px;
 
 }
 .thumbnail-2 h2:hover{
 	margin-right: 5px;
+	margin-left: -5px;
 
+}
+#type{
+	width: 160px;
+	animation-name: bob;
+	animation-duration: 3.5s;
+	animation-timing-function: steps(10);
+	overflow: hidden;
+}
+
+#portfolio{
+	margin-right: 0;
+	max-height: 38px;
+	animation: blink .75s 10;
+}
+
+
+@keyframes blink{
+	from{border-right: 5px solid black; }
+	to{ border: none; }
+}
+@keyframes bob{
+	0%{width: 0;}
+	100%{width: 160px;}
 }
