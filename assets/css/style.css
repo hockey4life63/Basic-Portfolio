@@ -10,6 +10,7 @@ html, body{
 	width: 960px;
 	margin: auto;
 }
+/*nav bar layout*/
 .nav{
 	background: #646473;
 	margin-top: 0;
@@ -17,6 +18,7 @@ html, body{
 	margin-bottom: 5%;
 	border-bottom: 4px solid black;
 }
+/*main logo style*/
 .logo{
 	font-family: 'Press Start 2P', cursive;
 	background: #babac0;
@@ -29,11 +31,12 @@ html, body{
     font-size: 35px;
     padding: 0 2%;
 }
+/*logo animation on home page*/
 #home-logo{
 	animation-name: logoleft;
-	animation-duration: 2s;
+	animation-duration: 1s;
 	-webkit-animation-name: logoleft;
-	-webkit-animation-duration: 2s;
+	-webkit-animation-duration: 1s;
 	animation-timing-function: ease-out;
 }
 @-webkit-keyframes logoleft {
@@ -44,6 +47,7 @@ html, body{
 	from{margin-left: -500px;}
 	to{margin-left: 10%;}
 }
+/*nav link style*/
 ul{
 	float: right;
 	margin-top: 30px;
@@ -62,6 +66,7 @@ li a{
 	color: black;
 	text-decoration: none;
 }
+/*main content box(about me/portfolio/contact form*/
 .content{
 	width: 650px ;
 	float: left;
@@ -86,47 +91,7 @@ li a{
 	text-decoration: none;
 	font-size: 26px;
 }
-.footer{
-	clear: both;
-}
-
-.footer p{
-	padding: 20px 0;
-}
-
-hr{
-	width: 90%;
-	margin: auto;
-	margin-bottom: 10px;
-}
-
-.contact{
-	text-align: center;
-	width: 270px;
-	background: lightgray;
-	padding-bottom: 20px;
-	float: left;
-	/*margin-left: 5%;*/
-}
-.contact img{
-	width: 75px;
-	height: 75px;
-}
-.line{
-	height: 2px;
-	color: lightgray;
-	width: 100%;
-}
-.footer{
-	border-top: 6px solid gray;
-	background: black;
-	text-align: center;
-	width: 100%;
-	position: fixed;
-	bottom: 0;
-	color: white;
-
-}
+/*about me image style*/
 #img-me{
 	float: left;
 	margin-right: 17px;
@@ -136,6 +101,40 @@ hr{
 	box-shadow: 10px 10px 5px #888888;
 	margin-left: 20px;
 }
+
+/*style for lines under contac and content boxes*/
+hr{
+	width: 90%;
+	margin: auto;
+	margin-bottom: 10px;
+}
+/*style for contact box*/
+.contact{
+	text-align: center;
+	width: 270px;
+	background: lightgray;
+	padding-bottom: 20px;
+	float: left;
+}
+.contact img{
+	width: 75px;
+	height: 75px;
+}
+/*stick footer settings*/
+.footer{
+	clear: both;
+	border-top: 6px solid gray;
+	background: black;
+	text-align: center;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	color: white;
+}
+.footer p{
+	padding: 20px 0;
+}
+
 .contact hr{
 	width: 80%;
 	margin:auto;
@@ -146,6 +145,7 @@ hr{
 	    font-size: 24px;
 	    padding: 15px 0;
 }
+/*style for all forms*/
 input{
 	    background: #eaeaea;
 	    width: 100%;
@@ -166,6 +166,7 @@ form{
 	width: 90%;
 	margin: 0 auto;
 }
+/*styles for portfolio content*/
 .thumbnail-1{
 	float: left;
 }
@@ -193,12 +194,15 @@ form{
 	width: 250px;
 
 }
+/*adds rounded corners to stac overflow logo to match others*/
 #sto{
 	border-radius: 7%;
 }
+/*adds underline while links are hovered*/
 a:hover {
 	text-decoration: underline;
 }
+/*hover settings for portfolio images*/
 .thumbnail-1 h2:hover +img{
 	box-shadow: 5px 5px 5px #888888;
 	margin-left: -5px;
@@ -220,6 +224,7 @@ a:hover {
 	margin-left: -5px;
 
 }
+/*settings for portfolio typing animation*/
 #type{
 	width: 160px;
 	animation-name: bob;
